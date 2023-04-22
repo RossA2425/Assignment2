@@ -1,47 +1,64 @@
 /* CUSTOM VARIABLE DECLARATION */
 :root {
+--page-side-margin: 5%;
 --section-break-margin: 25px;
---form-element-top-margin: 10px;
+--card-top-margin: 30px;
 --form-element-input-margin: 8px;
 --sectional-side-padding: 150px;
 --sectional-top-padding: 45px;
 }
 
-/* Main CSS */
+/* Generic CSS for HTML Elements */
 body {
   background: #B8B8FF;
   font-family: verdana
 }
 
+textarea {
+  resize: none;
+}
+
+/* Main CSS */
 .PrivateHirePage {
   font: arial;
+  margin-right: var(--page-side-margin);
+  margin-left: var(--page-side-margin)
+}
+
+.card {
+  margin-top: var(--card-top-margin);
+  padding: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #F8F7FF;
 }
 
 .Introduction {
   margin-top: var(--section-break-margin);
-  background: #FFEEDD;
-  padding-left: var(--sectional-side-padding);
-  padding-right: var(--sectional-side-padding);
-  padding-top: var(--sectional-top-padding);
-  padding-bottom: var(--sectional-top-padding);
 }
 .AskForContactDetails {
   margin-top: var(--section-break-margin);
-  background: #F8F7FF;
-  padding-left: var(--sectional-side-padding);
-  padding-right: var(--sectional-side-padding);
-  padding-top: var(--sectional-top-padding);
-  padding-bottom: var(--sectional-top-padding);
 }
 
-.PHContactForm{
-  margin-top: var(--section-break-margin);
+.PHMainInputs {
+  display: flex;
+}
+
+.PHPermissionAndSubmit{
+  display: flex;
+  margin-top: 20px;
+}
+
+.PHPermission {
+  width: 75%;
 }
 
 .PHFormElement {
-margin-top: var(--form-element-top-margin);
+  margin-top: 10px;
+  margin-right: var(--form-element-input-margin);
+  width: 33%;
 }
 
 .PHFormInput {
-  margin-left: var(--form-element-input-margin)
+  margin-top: 5px;
 }
