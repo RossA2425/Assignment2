@@ -1,0 +1,75 @@
+.container{
+    max-width: 1170px;
+    margin:auto
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px;
+    margin-top: 90px;
+    
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h3{
+    font-size: 19px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h3::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+}
+
+
+.about-us{
+    font-size: x-small;
+}
+.our-company-list{
+    text-align: left;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+h3{
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.social{
+    padding: 7px;
+}
+.help{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
