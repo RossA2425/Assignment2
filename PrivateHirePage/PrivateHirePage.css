@@ -8,33 +8,21 @@
 --sectional-top-padding: 45px;
 }
 
-/* Main CSS */
+/* Generic CSS for HTML Elements */
 body {
   background: #B8B8FF;
   font-family: verdana
 }
 
+textarea {
+  resize: none;
+}
+
+/* Main CSS */
 .PrivateHirePage {
   font: arial;
   margin-right: var(--page-side-margin);
   margin-left: var(--page-side-margin)
-}
-
-.Introduction {
-  margin-top: var(--section-break-margin);
-  background: #FFEEDD;
-  padding-left: var(--sectional-side-padding);
-  padding-right: var(--sectional-side-padding);
-  padding-top: var(--sectional-top-padding);
-  padding-bottom: var(--sectional-top-padding);
-}
-.AskForContactDetails {
-  margin-top: var(--section-break-margin);
-  background: #F8F7FF;
-  padding-left: var(--sectional-side-padding);
-  padding-right: var(--sectional-side-padding);
-  padding-top: var(--sectional-top-padding);
-  padding-bottom: var(--sectional-top-padding);
 }
 
 .card {
@@ -42,11 +30,13 @@ body {
   padding: 30px;
   padding-left: 10%;
   padding-right: 10%;
-  background-color: #FFEEDD;
-  width: 75%;
+  background-color: #F8F7FF;
 }
 
-.PHContactForm{
+.Introduction {
+  margin-top: var(--section-break-margin);
+}
+.AskForContactDetails {
   margin-top: var(--section-break-margin);
 }
 
@@ -64,6 +54,11 @@ body {
 }
 
 .PHFormElement {
+  margin-top: 10px;
   margin-right: var(--form-element-input-margin);
   width: 33%;
+}
+
+.PHFormInput {
+  margin-top: 5px;
 }
