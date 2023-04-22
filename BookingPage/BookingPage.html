@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="BookingPage.css">
+    <h1 class="main-title">BOOKING PAGE</h1>
+    <img src="ImagesIcons/black_cinema_logo.jpg">
+    <nav>
+        <ul class="navbar-list">
+            <li>
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">Membership</a>
+                <a class="nav-link" href="/">Contact Us</a>
+                <a class="nav-link" href="/">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-divider">
+        <div class="line">
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+</head>
+<body>
+    <div class="main-body">
+       <h2>Please select your tickets(s)</h2>
+       <button class="ticket-button">Adult £8.50</button>
+       <button class="ticket-button">Child £5</button>
+       <button class="ticket-button">Senior £6</button>
+       <button class="ticket-button">Student £6.50</button>
+    </div>
+
+    <div style="width:200px;">
+        <select class="amount-select">
+          <option disabled selected>Select amount of tickets:</option>
+          <option style="cursor:pointer;" value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <a href="PaymentPage.html" target="_blank"><button class="book-button" >BOOK NOW</button></a>
+      </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>Our Company</h3>
+                    <ul class="our-company">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Help</h3>
+                    <ul class="help" >
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="socials">
+                       
+                        <a class="social" href="https://facebook.com" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
+                        <a class="social" href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a class="social" href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
