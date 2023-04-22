@@ -1,7 +1,8 @@
 /* CUSTOM VARIABLE DECLARATION */
 :root {
+--page-side-margin: 5%;
 --section-break-margin: 25px;
---form-element-top-margin: 10px;
+--card-top-margin: 30px;
 --form-element-input-margin: 8px;
 --sectional-side-padding: 150px;
 --sectional-top-padding: 45px;
@@ -15,6 +16,8 @@ body {
 
 .PrivateHirePage {
   font: arial;
+  margin-right: var(--page-side-margin);
+  margin-left: var(--page-side-margin)
 }
 
 .Introduction {
@@ -34,11 +37,17 @@ body {
   padding-bottom: var(--sectional-top-padding);
 }
 
+.card {
+  margin-top: var(--card-top-margin);
+  padding: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #FFEEDD;
+  width: 75%;
+}
+
 .PHContactForm{
   margin-top: var(--section-break-margin);
-  padding: 30px;
-  padding-left: 15%;
-  background-color: #FFEEDD;
 }
 
 .PHMainInputs {
@@ -51,11 +60,10 @@ body {
 }
 
 .PHPermission {
-  width: 30%;
+  width: 75%;
 }
 
 .PHFormElement {
-margin-top: var(--form-element-top-margin);
-margin-right: var(--form-element-input-margin);
-width: 30%;
+  margin-right: var(--form-element-input-margin);
+  width: 33%;
 }
