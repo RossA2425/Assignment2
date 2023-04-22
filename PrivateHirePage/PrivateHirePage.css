@@ -1,0 +1,47 @@
+/* CUSTOM VARIABLE DECLARATION */
+:root {
+--section-break-margin: 25px;
+--form-element-top-margin: 10px;
+--form-element-input-margin: 8px;
+--sectional-side-padding: 150px;
+--sectional-top-padding: 45px;
+}
+
+/* Main CSS */
+body {
+  background: #B8B8FF;
+  font-family: verdana
+}
+
+.PrivateHirePage {
+  font: arial;
+}
+
+.Introduction {
+  margin-top: var(--section-break-margin);
+  background: #FFEEDD;
+  padding-left: var(--sectional-side-padding);
+  padding-right: var(--sectional-side-padding);
+  padding-top: var(--sectional-top-padding);
+  padding-bottom: var(--sectional-top-padding);
+}
+.AskForContactDetails {
+  margin-top: var(--section-break-margin);
+  background: #F8F7FF;
+  padding-left: var(--sectional-side-padding);
+  padding-right: var(--sectional-side-padding);
+  padding-top: var(--sectional-top-padding);
+  padding-bottom: var(--sectional-top-padding);
+}
+
+.PHContactForm{
+  margin-top: var(--section-break-margin);
+}
+
+.PHFormElement {
+margin-top: var(--form-element-top-margin);
+}
+
+.PHFormInput {
+  margin-left: var(--form-element-input-margin)
+}
