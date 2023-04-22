@@ -21,15 +21,12 @@ textarea {
 /* Main CSS */
 .PrivateHirePage {
   font: arial;
-  margin-right: var(--page-side-margin);
-  margin-left: var(--page-side-margin)
+  margin:  0 var(--page-side-margin) 0 var(--page-side-margin);
 }
 
 .card {
   margin-top: var(--card-top-margin);
-  padding: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 30px 10% 30px 10%;
   background-color: #F8F7FF;
 }
 
@@ -54,8 +51,7 @@ textarea {
 }
 
 .PHFormElement {
-  margin-top: 10px;
-  margin-right: var(--form-element-input-margin);
+  margin: 10px var(--form-element-input-margin) 0 0;
   width: 33%;
 }
 
