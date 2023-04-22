@@ -36,12 +36,26 @@ body {
 
 .PHContactForm{
   margin-top: var(--section-break-margin);
+  padding: 30px;
+  padding-left: 15%;
+  background-color: #FFEEDD;
+}
+
+.PHMainInputs {
+  display: flex;
+}
+
+.PHPermissionAndSubmit{
+  display: flex;
+  margin-top: 20px;
+}
+
+.PHPermission {
+  width: 30%;
 }
 
 .PHFormElement {
 margin-top: var(--form-element-top-margin);
-}
-
-.PHFormInput {
-  margin-left: var(--form-element-input-margin)
+margin-right: var(--form-element-input-margin);
+width: 30%;
 }
