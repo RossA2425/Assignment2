@@ -1,0 +1,132 @@
+/* Global font for the entire page */
+html * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  /* Changes font size for each label within the form */
+label {
+    font-size: 15px;
+}
+
+/* The container creates the margins that the contact form fields will be displayed within */
+.container {
+    margin-top: 10px;
+    margin-bottom: 200px;
+    margin-right: 400px;
+    margin-left: 400px;
+    border-spacing: 50px;
+    border: 2px solid #9381FF; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    padding: 25px;
+    background: #F8F7FF;
+}
+
+
+/* Any text field within the form will follow the CSS below (forename, surname) */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #9381FF; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-size: 15px;
+}
+
+/* Any tel field within the form will follow the CSS below (Contact_Number) */
+input[type=tel] {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #9381FF; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+    font-size: 15px;
+}
+
+/* Any email field within the form will follow the CSS below (email) */
+input[type=email] {
+    width: 100%; 
+    padding: 15px; 
+    border: 1px solid #9381FF; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+    font-size: 15px;
+}
+
+/* Submit Button */
+input[type=submit] {
+    background-color: #FFD8BE;
+    color: black;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right:10px;
+    font-weight: bold;
+}
+
+/* Reset Button */
+input[type=button] {
+    background-color: #FFD8BE;
+    color: black;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* When you hover over the Submit Button the colour of the text box will change to #FFEEDD  */
+input[type=submit]:hover {
+    background-color: #FFEEDD;
+}
+
+/* When you hover over the Reset Button the colour of the text box will change to #FFEEDD  */
+input[type=button]:hover {
+    background-color: #FFEEDD;
+}
+
+/* Will align buttons center  */
+.align{
+    display:flex;
+    align-items: center;
+    margin-left: 350px;
+}
+
+/* will align h1 text to centre of page and display the text in the colour #9381FF  */
+h1 {
+    text-align: center;
+    color:#9381FF;
+    font-size: 30px;
+}
+
+/* will align h2 text to centre of page and display the text in the colour #9381FF  */
+h2 {
+    text-align: center;
+    color: #9381FF;
+    font-size: 30px
+}
+
+/* opening.hours will be displayed in the centre of the page */
+.opening_Hours {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* contact_us will be displayed in the centre of the page */
+.contact_us {
+    text-align: center;
+    font-size: 20px;
+}
+
