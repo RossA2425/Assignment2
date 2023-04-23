@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Theater Website</title>
+    <link rel="stylesheet" type="text/css" href="home_page.css" />
+    <script src="home_page.js"></script>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <!-- This code defines a container div with a slider. -->
+
+      <div class="container">
+        <!-- This slider has 5 radio buttons, each with a unique ID (s1-s5) and the same name (slider).
+       The radio buttons are hidden using the "d-none" class. -->
+        <input type="radio" name="slider" class="d-none" id="s1" checked />
+        <input type="radio" name="slider" class="d-none" id="s2" />
+        <input type="radio" name="slider" class="d-none" id="s3" />
+        <input type="radio" name="slider" class="d-none" id="s4" />
+        <input type="radio" name="slider" class="d-none" id="s5" />
+        <!-- This slider contains a set of cards that will be displayed based on the selected radio button.
+       Each card is defined using a label element with a "for" attribute that matches the ID of the corresponding radio button. -->
+        <div class="cards">
+          <label for="s1" id="slide1">
+            <div class="card">
+              <img src="creed.jpg" alt="" />
+              <div class="shadow">Creed</div>
+            </div>
+          </label>
+
+          <label for="s2" id="slide2">
+            <div class="card">
+              <img src="creed.jpg" alt="" />
+              <div class="shadow">Creed</div>
+            </div>
+          </label>
+
+          <label for="s3" id="slide3">
+            <div class="card">
+              <img src="creed.jpg" alt="" />
+              <div class="shadow">Creed</div>
+            </div>
+          </label>
+
+          <label for="s4" id="slide4">
+            <div class="card">
+              <img src="creed.jpg" alt="" />
+              <div class="shadow">Creed</div>
+            </div>
+          </label>
+
+          <label for="s5" id="slide5">
+            <div class="card">
+              <img src="creed.jpg" alt="" />
+              <div class="shadow">Creed</div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <!-- This section defines a container for the movie information with an ID of "text-section". -->
+
+      <section class="infos" id="text-section">
+        <!-- This heading contains the movie title -->
+
+        <h1>Creed |||</h1>
+        <!-- This paragraph contains a brief description of the movie's plot. -->
+
+        <p>
+          Adonis has been thriving in both his carrer and family life, but when
+          a childhood friend and former boxing prodigy resurfaces, the face-off
+          is more than a fight.
+        </p>
+      </section>
+      <!-- This section defines a container for news and upcoming events with a class of "News". -->
+
+      <section class="News">
+        <!-- This heading contains the title of the section "News & Coming Up". -->
+
+        <h1>News & Coming Up</h1>
+        <!-- This div contains a container for two news items with a class of "container2". -->
+
+        <div class="container2">
+          <!-- This div contains an image of a cinema with a message about new recliner chairs. -->
+
+          <div class="img1">
+            <img src="Cinema.jpg" alt="" />
+            <p>Brand new recliner chairs</p>
+            <!-- This link contains a button for reading more about the news item. -->
+
+            <a href="/Read_More"><button class="More">Read More</button></a>
+          </div>
+          <!-- This div contains an image of the Marvel logo with a message about Marvel Phase 5. -->
+
+          <div class="img2">
+            <img src="Marvel_Logo.svg.png" alt="" />
+            <p>Marvel Phase 5 and what it means</p>
+            <!-- This link contains a button for reading more about the news item. -->
+
+            <a href="/Read_More"><button class="More">Read More</button></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- This section defines a footer section with a class of "footer". -->
+
+      <section class="footer">
+        <!-- This heading contains the title of the section "QUICK BOOK". -->
+
+        <h1>QUICK BOOK</h1>
+        <!-- This div contains a container for three dropdown menus and a button with a class of "buttons". -->
+
+        <div class="buttons">
+          <!-- This dropdown menu allows the user to select a movie with an id of "Movie". -->
+
+          <select class="form-select2" aria-label="Dropdown" id="Movie">
+            <option value="" selected>Select A Movie...</option>
+          </select>
+          <!-- This dropdown menu allows the user to select a date with an id of "Date". -->
+
+          <select class="form-select2" aria-label="Dropdown" id="Date">
+            <option value="" selected>Select A Date...</option>
+          </select>
+          <!-- This dropdown menu allows the user to select a time with an id of "Time". -->
+
+          <select class="form-select2" aria-label="Dropdown" id="Time">
+            <option value="" selected>Select A Time...</option>
+          </select>
+          <!-- This link contains a button for booking now with a class of "Book Now". -->
+
+          <a href="/Book_now"
+            ><button >Book Now</button></a
+          >
+        </div>
+      </section>
+    </main>
+
+    
+  </body>
+</html>
