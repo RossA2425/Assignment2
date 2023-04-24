@@ -1,12 +1,13 @@
-var buttons = document.getElementsByClassName('ticket-button');
+var buttons = document.getElementsByClassName("ticket-button");
+
 for (var i = buttons.length - 1; i >= 0; i--) {
-		var currentbutton;
+		var selectedButton;
 		buttons[i].onclick=function(){
-    	if(currentbutton){
-    		currentbutton.classList.remove("highlight");
+    	if(selectedButton){
+    		selectedButton.classList.remove("selection");
     	}
-      this.classList.add("highlight");
-      currentbutton=this;
+      this.classList.add("selection");
+      selectedButton=this;
     }
     
 };
