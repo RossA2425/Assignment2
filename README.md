@@ -7,3 +7,10 @@ Responsibilites:
 - David: Membership Page
 - Therese: Contact Page
 - Ross: Private Hire Page
+
+----
+
+#Git Commits Step-By-Step
+
+##Uploading changes to your working branch
+1) git status
