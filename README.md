@@ -15,8 +15,9 @@ Responsibilites:
 ## Uploading changes to your working branch
 1. git status
 2. git add . (or git add <specific file path>)
-3. git commit -m 'your commit message'
-4. git push
+3. git status (make sure all the files you want to change or remove are green)
+4. git commit -m 'your commit message'
+5. git push
   
 ## Uploading changes from your working branch to develop (when ready for others to use your code)
   1. git status (make sure there are no outstanding changes left to commit to your working branch)
