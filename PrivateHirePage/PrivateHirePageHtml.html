@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="PrivateHirePage.css" />
     <link
       rel="stylesheet"
-      href="../SharedComponentsLibrary//CSS Files/card.css"
+      href="../SharedComponentsLibrary//CSS Files/card/card.css"
     />
   </head>
   <body>
@@ -22,60 +22,78 @@
       </nav>
     </header>
     <main>
+      <section id="hero">
+        <h1>Private Hire Cinema Rooms</h1>
+        <p>Experience movies like never before!</p>
+      </section>
       <div class="card">
-        <div class="card-header">
-          <div class="card-title">
-            <h1>Private Hire Cinema Rooms</h1>
+        <section id="about">
+          <div class="card-header">
+            <div class="card-title">
+              <h2>About</h2>
+            </div>
           </div>
-        </div>
-        <div class="card-body">
-          <section id="hero">
-            <p>Experience movies like never before!</p>
-          </section>
-          <h2>About</h2>
-          <section id="about">
+          <div class="card-body">
             <p>
               Our private hire cinema rooms offer an exclusive movie experience
               for groups of up to 10 people. With comfortable seating, a
               state-of-the-art sound system, and a high-quality projector, you
               can enjoy your favorite movies in style.
             </p>
-          </section>
-          <h2>Rooms</h2>
-          <section id="rooms">
-            <ul>
-              <li>
-                <h3>Room 1</h3>
-                <p>Capacity: 10 people</p>
-                <p>
-                  Features: Comfortable seating, high-quality projector, and
-                  sound system
-                </p>
-              </li>
-              <li>
-                <h3>Room 2</h3>
-                <p>Capacity: 10 people</p>
-                <p>
-                  Features: Comfortable seating, high-quality projector, and
-                  sound system
-                </p>
-              </li>
-              <li>
-                <h3>Room 3</h3>
-                <p>Capacity: 10 people</p>
-                <p>
-                  Features: Comfortable seating, high-quality projector, and
-                  sound system
-                </p>
-              </li>
-            </ul>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
+      <section id="rooms">
+        <h2>Rooms</h2>
+        <div class="roomCards">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Components/Images/cinema1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Classic</h5>
+              <p class="card-text">
+                This screen provides you with the 'classic' and authentic cinema
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Components/Images/cinema2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Luxe</h5>
+              <p class="card-text">
+                This screen provides an elevated sense of luxury to your cinema
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Components/Images/cinema4.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Front Room</h5>
+              <p class="card-text">
+                This screen provides a more suitable setting for smaller groups
+                of up to 10 people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="card">
         <div class="card-header">
           <div class="card-title">
-            <h2>Booking</h2>
+            <h2>Book Now!</h2>
           </div>
         </div>
         <div class="card-body">
@@ -107,6 +125,7 @@
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <div class="modal-body">
+                  <h1>Your Booking Confirmation:</h1>
                   <p>Name:</p>
                   <p>Email:</p>
                   <p>Room:</p>
@@ -120,8 +139,8 @@
       </div>
       <section id="contact">
         <h2>Contact</h2>
-        <p>Phone: 555-1234</p>
-        <p>Email: info@privatehirecinema.com</p>
+        <p>Phone: 028 7042 1298</p>
+        <p>Email: info@picturehousecinema.com</p>
       </section>
     </main>
     <script src="PrivateHirePage.js"></script>
