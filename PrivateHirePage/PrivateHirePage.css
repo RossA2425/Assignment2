@@ -10,7 +10,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f1f1f1;
+  background-color: #e2dff7;
 }
 
 header {
@@ -120,4 +120,8 @@ form button[type='submit'] {
 
 .modal-body p {
   margin-bottom: 0.5rem;
+}
+
+.roomCards {
+  display: flex;
 }

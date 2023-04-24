@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Private Hire Cinema Rooms</title>
     <link rel="stylesheet" href="PrivateHirePage.css" />
+    <link
+      rel="stylesheet"
+      href="../SharedComponentsLibrary//CSS Files/card/card.css"
+    />
   </head>
   <body>
     <header>
@@ -22,86 +26,121 @@
         <h1>Private Hire Cinema Rooms</h1>
         <p>Experience movies like never before!</p>
       </section>
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          Our private hire cinema rooms offer an exclusive movie experience for
-          groups of up to 10 people. With comfortable seating, a
-          state-of-the-art sound system, and a high-quality projector, you can
-          enjoy your favorite movies in style.
-        </p>
-      </section>
+      <div class="card">
+        <section id="about">
+          <div class="card-header">
+            <div class="card-title">
+              <h2>About</h2>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              Our private hire cinema rooms offer an exclusive movie experience
+              for groups of up to 10 people. With comfortable seating, a
+              state-of-the-art sound system, and a high-quality projector, you
+              can enjoy your favorite movies in style.
+            </p>
+          </div>
+        </section>
+      </div>
       <section id="rooms">
         <h2>Rooms</h2>
-        <ul>
-          <li>
-            <h3>Room 1</h3>
-            <p>Capacity: 10 people</p>
-            <p>
-              Features: Comfortable seating, high-quality projector, and sound
-              system
-            </p>
-          </li>
-          <li>
-            <h3>Room 2</h3>
-            <p>Capacity: 10 people</p>
-            <p>
-              Features: Comfortable seating, high-quality projector, and sound
-              system
-            </p>
-          </li>
-          <li>
-            <h3>Room 3</h3>
-            <p>Capacity: 10 people</p>
-            <p>
-              Features: Comfortable seating, high-quality projector, and sound
-              system
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section id="booking">
-        <h2>Booking</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="room">Room:</label>
-          <select id="room" name="room" required>
-            <option value="">--Select a room--</option>
-            <option value="Room 1">Room 1</option>
-            <option value="Room 2">Room 2</option>
-            <option value="Room 3">Room 3</option>
-          </select>
-
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" required />
-
-          <label for="time">Time:</label>
-          <input type="time" id="time" name="time" required />
-
-          <button type="submit">Book Now</button>
-        </form>
-        <div class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body">
-              <p>Name:</p>
-              <p>Email:</p>
-              <p>Room:</p>
-              <p>Date:</p>
-              <p>Time:</p>
+        <div class="roomCards">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Components/Images/cinema1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Classic</h5>
+              <p class="card-text">
+                This screen provides you with the 'classic' and authentic cinema
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Components/Images/cinema2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Luxe</h5>
+              <p class="card-text">
+                This screen provides an elevated sense of luxury to your cinema
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Components/Images/cinema4.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Front Room</h5>
+              <p class="card-text">
+                This screen provides a more suitable setting for smaller groups
+                of up to 10 people.
+              </p>
             </div>
           </div>
         </div>
       </section>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <h2>Book Now!</h2>
+          </div>
+        </div>
+        <div class="card-body">
+          <section id="booking">
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="room">Room:</label>
+              <select id="room" name="room" required>
+                <option value="">--Select a room--</option>
+                <option value="Room 1">Room 1</option>
+                <option value="Room 2">Room 2</option>
+                <option value="Room 3">Room 3</option>
+              </select>
+
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required />
+
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" required />
+
+              <button type="submit">Book Now</button>
+            </form>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                  <h1>Your Booking Confirmation:</h1>
+                  <p>Name:</p>
+                  <p>Email:</p>
+                  <p>Room:</p>
+                  <p>Date:</p>
+                  <p>Time:</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       <section id="contact">
         <h2>Contact</h2>
-        <p>Phone: 555-1234</p>
-        <p>Email: info@privatehirecinema.com</p>
+        <p>Phone: 028 7042 1298</p>
+        <p>Email: info@picturehousecinema.com</p>
       </section>
     </main>
     <script src="PrivateHirePage.js"></script>
