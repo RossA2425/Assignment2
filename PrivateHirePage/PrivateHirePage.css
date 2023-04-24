@@ -30,6 +30,14 @@ textarea {
   background-color: #F8F7FF;
 }
 
+.card img {
+  margin-top: var(--card-top-margin);
+  padding: 30px 10% 30px 10%;
+  background-color: #F8F7FF;
+  width: 500px;
+  height: 300px;
+}
+
 .Introduction {
   margin-top: var(--section-break-margin);
 }
