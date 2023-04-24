@@ -1,127 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Private Hire Page</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="./PrivateHirePage.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./Components/ImageRotation/ImageRotation.css"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Hire Cinema Rooms</title>
+    <link rel="stylesheet" href="PrivateHirePage.css" />
   </head>
-
   <body>
-    <div class="PrivateHirePage">
-      <div class="card">
-        <div class="Introduction">
-          <h1>Private Hire At Picture House</h1>
-          At Picture House, we are more than just a cinema - we're entertainment
-          providers! In order to elevate the experience that our customers have,
-          we offer Private Hire Services! <br /><br />
-          There's nothing better than the comfort of choosing your own movie to
-          relax to - so why not experience this with friends, family or
-          corporate colleagues?
-        </div>
-      </div>
-      <div class="card">
-        <h2>How does it work?</h2>
-        The private hire service is designed to give <b>you</b> full control of
-        your cinema experience. You will be able to choose from a variety of
-        options including: location, cinema size, movie as well as the day and
-        time of your screening. <br /><br />
-        Please note: Certain options will affect your quote due to the affect of
-        cost to business (e.g. time and day of hire)
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Private Hire Cinema Rooms</h1>
+        <p>Experience movies like never before!</p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Our private hire cinema rooms offer an exclusive movie experience for
+          groups of up to 10 people. With comfortable seating, a
+          state-of-the-art sound system, and a high-quality projector, you can
+          enjoy your favorite movies in style.
+        </p>
+      </section>
+      <section id="rooms">
+        <h2>Rooms</h2>
+        <ul>
+          <li>
+            <h3>Room 1</h3>
+            <p>Capacity: 10 people</p>
+            <p>
+              Features: Comfortable seating, high-quality projector, and sound
+              system
+            </p>
+          </li>
+          <li>
+            <h3>Room 2</h3>
+            <p>Capacity: 10 people</p>
+            <p>
+              Features: Comfortable seating, high-quality projector, and sound
+              system
+            </p>
+          </li>
+          <li>
+            <h3>Room 3</h3>
+            <p>Capacity: 10 people</p>
+            <p>
+              Features: Comfortable seating, high-quality projector, and sound
+              system
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="booking">
+        <h2>Booking</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <div class="card">
-          <img
-            src="./Components/Images/cinema1.jpg"
-            alt="Image of Cinema One"
-          />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-          <img
-            src="./Components/Images/cinema2.jpg"
-            alt="Image of Cinema Two"
-          />
+          <label for="room">Room:</label>
+          <select id="room" name="room" required>
+            <option value="">--Select a room--</option>
+            <option value="Room 1">Room 1</option>
+            <option value="Room 2">Room 2</option>
+            <option value="Room 3">Room 3</option>
+          </select>
 
-          <img
-            src="./Components/Images/cinema3.jpg"
-            alt="Image of Concession Stand"
-          />
-        </div>
-        <!-- <div class="image-container">
-          <img
-            src="./Components/Images/cinema1.jpg"
-            alt="Image of Cinema Screen One"
-          />
-          <img
-            src="./Components/Images/cinema2.jpg"
-            alt="Image of Cinema Screen Two"
-          />
-          <img
-            src="./Components/Images/cinema3.jpg"
-            alt="Image of Cinema Concession Stand"
-          />
-        </div> -->
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
 
-        <!-- <script src="./Components/ImageRotation/ImageRotation.js"></script> -->
-      </div>
-      <div class="card">
-        <div class="AskForContactDetails">
-          <h2>Get your free, no obligation quote!</h2>
-          Please fill out the form below to request more information and we'll
-          be in touch to arrange your private screening, and provide an upfront
-          quote so you know the exact price you pay, right from the start!
-          <div class="card">
-            <form class="PHContactForm">
-              <div class="PHMainInputs">
-                <div class="PHFormElement">
-                  <label>Name</label>
-                  <br />
-                  <div class="PHFormInput">
-                    <input />
-                  </div>
-                </div>
-                <div class="PHFormElement">
-                  <label>Phone Number</label>
-                  <br />
-                  <div class="PHFormInput">
-                    <input />
-                  </div>
-                </div>
-                <div class="PHFormElement">
-                  <label>Email</label>
-                  <br />
-                  <div class="PHFormInput">
-                    <input type="email" />
-                  </div>
-                </div>
-              </div>
-              <div class="PHFormElement">
-                <div class="PHTextArea">
-                  <label>Special Requests/Booking Notes</label>
-                  <br />
-                  <div class="PHFormInput">
-                    <textarea spellcheck="true" cols="100" rows="6"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="PHPermissionAndSubmit">
-                <div class="PHPermission">
-                  <label
-                    >Do you give Picture House Cinemas permission to contact you
-                    regarding your private hire request?</label
-                  >
-                  <input type="checkbox" />
-                </div>
-                <div class="PHFormElement">
-                  <input type="submit" />
-                </div>
-              </div>
-            </form>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <button type="submit">Book Now</button>
+        </form>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+              <p>Name:</p>
+              <p>Email:</p>
+              <p>Room:</p>
+              <p>Date:</p>
+              <p>Time:</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Phone: 555-1234</p>
+        <p>Email: info@privatehirecinema.com</p>
+      </section>
+    </main>
+    <script src="PrivateHirePage.js"></script>
   </body>
 </html>
