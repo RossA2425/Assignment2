@@ -139,11 +139,11 @@ ul{
     margin-top: 90px;
     
 }
-.footer-col{
+.footer-column{
     width: 25%;
     padding: 0 15px;
 }
-.footer-col h3{
+.footer-column h3{
     font-size: 19px;
     color: white;
     text-transform: capitalize;
