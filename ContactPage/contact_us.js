@@ -1,11 +1,34 @@
-// JavaScript source code
+const form = document.getElementById("contactUs");
+const modal = document.getElementById("modal");
+const closeModal = document.querySelector(".close");
+const formData = document.getElementById("form-data");
 
-// Submit Button functionality. An alert message will be displayed when Submit is clicked 
-function submitFunction() {
-    alert("The form was submitted. We will get back to you within 24 hours")
-}
+// When the user clicks the submit button, display the modal
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting
 
-// Reset Button functionality. The fields that are populated within the form when reset button is clicked will become empty fields
-function resetFunction() {
-    document.getElementById("contactUs").reset();
-            }
+    // Get the form data and display it in the modal
+    const forename = form.elements["forename"].value;
+    const email = form.elements["email"].value;
+    const message = form.elements["message"].value;
+    formData.innerHTML = `<B>Forename:</B> ${forename}<br>Email: ${email}<br>Message: ${message}`;
+
+    // Display the modal
+    modal.style.display = "block";
+});
+
+// When the user clicks the close button, hide the modal and reset the form
+closeModal.addEventListener("click", function() {
+    modal.style.display = "none";
+    form.reset();
+});
+
+// When the user clicks anywhere outside of the modal, hide it and reset the form
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        form.reset();
+    }
+});
+
+

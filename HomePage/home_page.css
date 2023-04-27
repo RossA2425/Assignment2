@@ -1,342 +1,528 @@
-/* CSS for desktop devices */
+body{
+  background-color: #e2dff7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0; 
+  margin: 0;
+}
 
-/* Set margin of the entire body to 0 */
-body {
-    margin: 0;
-  }
-  
- 
-  /* Styling for the input element */
-  input {
-    display: none;
-  }
-  
-  /* Styling for the main content section */
-  main {
-    background-color: #e2dff7;
-    height: 400px;
-  }
-  
-  /* Styling for the container element */
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    max-width: 2000px;
-    max-height: 400px;
-    display: flex;
-    transform-style: preserve-3d;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  /* Styling for the cards element */
-  .cards {
-    margin-top: 20px;
-    position: relative;
-    height: 600px;
-    width: 600px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-  
-  /* Styling for the label elements within the cards element */
-  .cards label {
-    position: absolute;
-    width: 600px;
-    left: 0;
-    top: 0;
-    cursor: pointer;
-    transition: transform 0.55s ease;
-  }
-  
-  /* Styling for the shadow element within the card element */
-  .card .shadow {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: left;
-    font-size: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-  }
-  
-  /* Styling for the card elements within the cards element */
-  .cards .card {
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-  }
-  
-  /* Styling for the images within the card elements */
-  .card img {
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  
-  /* This section handles the animation and transition of the card slider */
-  #s1:checked ~ .cards #slide4,
-  #s2:checked ~ .cards #slide5,
-  #s3:checked ~ .cards #slide1,
-  #s4:checked ~ .cards #slide2,
-  #s5:checked ~ .cards #slide3 {
-    transform: translate3d(-70%, 0, -220px);
-    --current-color1: #eceaed;
-    --current-color2: #404457;
-  }
-  
-  #s1:checked ~ .cards #slide5,
-  #s2:checked ~ .cards #slide1,
-  #s3:checked ~ .cards #slide2,
-  #s4:checked ~ .cards #slide3,
-  #s5:checked ~ .cards #slide4 {
-    transform: translate3d(-35%, 0, -120px);
-    --current-color1: #eceaed;
-    --current-color2: #404457;
-  }
-  
-  #s1:checked ~ .cards #slide1,
-  #s2:checked ~ .cards #slide2,
-  #s3:checked ~ .cards #slide3,
-  #s4:checked ~ .cards #slide4,
-  #s5:checked ~ .cards #slide5 {
-    transform: translate3d(0, 0, 0);
-    --current-color1: #fad00c;
-    --current-color2: #eceaed;
-  }
-  
-  #s1:checked ~ .cards #slide2,
-  #s2:checked ~ .cards #slide3,
-  #s3:checked ~ .cards #slide4,
-  #s4:checked ~ .cards #slide5,
-  #s5:checked ~ .cards #slide1 {
-    transform: translate3d(35%, 0, -120px);
-    --current-color1: #eceaed;
-    --current-color2: #404457;
-  }
-  
-  #s1:checked ~ .cards #slide3,
-  #s2:checked ~ .cards #slide4,
-  #s3:checked ~ .cards #slide5,
-  #s4:checked ~ .cards #slide1,
-  #s5:checked ~ .cards #slide2 {
-    transform: translate3d(70%, 0, -220px);
-    --current-color1: #eceaed;
-    --current-color2: #404457;
-  }
-  
-  /* This section styles the information box */
-  .infos {
-    width: 520px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .infos p {
-    margin: 0;
-    font-size: 20px;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    text-align: center;
-  }
-  .infos h1 {
-    margin-bottom: 30px;
-    font-size: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    text-align: center;
-  }
-  
-  /* This section styles the news section */
-  .News {
-    background-color: #e2dff7;
-    margin: 0 auto;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 500px;
-  }
+header{
+  background-color:#b8b8ff;
+  margin-top: 0 ;
+  padding: 0; 
+}
+
+.nav{
+  margin-top: 0 ;
+  padding: 0; 
+}
+
+.nav-link{
+  padding: 0px;
+  margin-left: 200px;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
+nav{
+width: 100%;
+margin-left: 8px;
+
+}
+.navbar-list{
+list-style-type: none;
+margin-top: 40px;
+}
+
+.nav-link:hover{
+text-decoration: underline;
+color: #feffec;
+}
+
+.container-divider{
+  padding: 12px;
+}
+.line{
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.line::after, .line::before{
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #feffec;
+  width: 46%;
+  top: 46%;
+}
+
+.line::after{
+  left: 0;
+}
+
+.line::before{
+  right: 0;
+}
+
+.dot{
+  display: inline-block;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border-style: solid;
+border-width: 2px;
+border-color:#feffec;
+background-color: rgba(0, 0, 0, 0);
+position: relative;
+top:0;
+left:0;
+margin-left: 594px;
+
+}
+
+
+
+
+/* Styling for the input element */
+input {
+  display: none;
+}
+
+/* Styling for the main content section */
+main {
+  background-color: #e2dff7;
+  height: 400px;
+}
+
+/* Styling for the container element */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 2000px;
+  max-height: 400px;
+  display: flex;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styling for the cards element */
+.cards {
+  margin-top: 20px;
+  position: relative;
+  height: 600px;
+  width: 600px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Styling for the label elements within the cards element */
+.cards label {
+  position: absolute;
+  width: 600px;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+
+/* Styling for the shadow element within the card element */
+.card .shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: left;
+  font-size: 25px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Styling for the card elements within the cards element */
+.cards .card {
+  object-fit: scale-down;
+
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+/* Styling for the images within the card elements */
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* This section handles the animation and transition of the card slider */
+#s1:checked ~ .cards #slide4,
+#s2:checked ~ .cards #slide5,
+#s3:checked ~ .cards #slide1,
+#s4:checked ~ .cards #slide2,
+#s5:checked ~ .cards #slide3 {
+  transform: translate3d(-70%, 0, -220px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+#s1:checked ~ .cards #slide5,
+#s2:checked ~ .cards #slide1,
+#s3:checked ~ .cards #slide2,
+#s4:checked ~ .cards #slide3,
+#s5:checked ~ .cards #slide4 {
+  transform: translate3d(-35%, 0, -120px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+#s1:checked ~ .cards #slide1,
+#s2:checked ~ .cards #slide2,
+#s3:checked ~ .cards #slide3,
+#s4:checked ~ .cards #slide4,
+#s5:checked ~ .cards #slide5 {
+  transform: translate3d(0, 0, 0);
+  --current-color1: #fad00c;
+  --current-color2: #eceaed;
+}
+
+#s1:checked ~ .cards #slide2,
+#s2:checked ~ .cards #slide3,
+#s3:checked ~ .cards #slide4,
+#s4:checked ~ .cards #slide5,
+#s5:checked ~ .cards #slide1 {
+  transform: translate3d(35%, 0, -120px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+#s1:checked ~ .cards #slide3,
+#s2:checked ~ .cards #slide4,
+#s3:checked ~ .cards #slide5,
+#s4:checked ~ .cards #slide1,
+#s5:checked ~ .cards #slide2 {
+  transform: translate3d(70%, 0, -220px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+/* This section styles the information box */
+.infos {
+  width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.infos p {
+  margin: 0;
+  font-size: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.infos h1 {
+  margin-top: 50;
+  margin-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* This section styles the news section */
+.News {
+  background-color: #e2dff7;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: -50px;
+}
+
   .News .container2 {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
   }
+
   .News h1 {
-    font-size: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    text-align: center;
-    justify-self: flex-start;
+      font-size: 35px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      justify-self: flex-start;
+      margin-top:50px;
   }
-  
-  /* Styling for the first image container */
-  .container2 .img1 {
-    position: relative;
-    width: 300px;
-    background-color: #404457;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Styling for the image inside the first container */
-  .img1 img {
-    width: 300px;
-    height: 150px;
-    top: 0;
-    left: 0;
-  }
-  
-  /* Styling for the paragraph inside the first container */
-  .img1 p {
-    color: #eceaed;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    margin-top: 45px;
-    text-align: center;
-  }
-  
-  /* Styling for the second image container */
-  .container2 .img2 {
-    position: relative;
-    width: 300px;
-    background-color: #404457;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Styling for the image inside the second container */
-  .img2 img {
-    width: 300px;
-    height: 150px;
-    top: 0;
-    left: 0;
-  }
-  
-  /* Styling for the paragraph inside the second container */
-  .img2 p {
-    color: #eceaed;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    margin-top: 45px;
-    text-align: center;
-  }
-  
-  /* Styling for the "More" button */
-  .More {
-    border-radius: 15px;
-    border: transparent;
-    background-color: #ffd8be;
-    color: black;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    height: 40px;
-    width: 120px;
-    margin-bottom: 10px;
-  }
+
+/* Styling for the first image container */
+.container2 .img1 {
+  position: relative;
+  width: 300px;
+  background-color: #404457;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the image inside the first container */
+.img1 img {
+  width: 300px;
+  height: 150px;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for the paragraph inside the first container */
+.img1 p {
+  color: #eceaed;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 45px;
+  text-align: center;
+}
+
+/* Styling for the second image container */
+.container2 .img2 {
+  position: relative;
+  width: 300px;
+  background-color: #404457;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the image inside the second container */
+.img2 img {
+  width: 300px;
+  height: 150px;
+  top: 0;
+  left: 0;
+}
+
+/* Styling for the paragraph inside the second container */
+.img2 p {
+  color: #eceaed;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 45px;
+  text-align: center;
+}
+
+/* Styling for the "More" button */
+.More {
+  border-radius: 15px;
+  border: transparent;
+  background-color: #ffd8be;
+  color: black;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 40px;
+  width: 120px;
+  margin-bottom: 10px;
+}
 
   .More:hover {
-    background-color: #ffeedd;
- }
-
-
-
-  /* Styling for the footer container */
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
+      background-color: #ffeedd;
   }
-  
+
+
+
+/* Styling for the footer container */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
   /* Styling for the button inside the footer */
-  .footer button {
-    color: black;
-    background-color: #ffd8be;
-    border-radius: 15px;
-    border: none;
-    width: 200px;
-    height: 50px;
-    font-size: small;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 0;
-    margin-bottom: 15px;
-    margin-right:50px;
-  }
+.footer button {
+  color: black;
+   background-color: #ffd8be;
+  border-radius: 15px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  font-weight: bold;
+}
 
-  .footer button:hover {
-    background-color: #ffeedd;
- }
-  
   /* Styling for the heading inside the footer */
   .footer h1 {
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    margin-left: 100px;
-  }
-  
-  /* Styling for the container holding the buttons inside the footer */
-  .footer .buttons {
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    flex-direction: row;
-    display: flex;
-  }
-  
-  /* Styling for the select dropdown */
-  .form-select2 {
-    background-image: url(down-arrow.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    color: black;
-    background-color: #9381ff;
-    border-radius: 15px;
-    border: none;
-    width: 200px;
-    height: 50px;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 0;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-weight: bold;
-    margin-bottom: 15px;
-    position: relative;
-    display: flex;
-    text-align: center;
+      font-size: 35px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-left: 25px;
   }
 
+  /* Styling for the container holding the buttons inside the footer */
+  .footer .buttons {
+      justify-content: center;
+      align-items: center;
+      gap: 150px;
+      flex-direction: row;
+      display: flex;
+      font-weight: bold;
+      margin-bottom: 30px;
+  }
+
+/* Styling for the select dropdown */
+.form-select2 {
+  background-image: url(down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: black;
+  background-color: #9381ff;
+  border-radius: 15px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin-left: 20px;
+}
+
   .form-select2:hover {
-    background-color: #b8b8ff;
- }
-  
+      background-color: #b8b8ff;
+  }
+
   /* Styling for the image inside the select dropdown */
   .form-select2 img {
-    position: absolute;
-    top: 0;
-    right: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
   }
+
+
+
+
+/* FOOTER */
+.container4{
+  max-width: 1170px;
+  margin:auto;
+  margin-bottom: 150px;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+  gap:70px
+}
+
+.footer2{
+background-color: #24262b;
+padding: 70px;
+  /* margin-top: 90px; */
+}
+
+.footer2-col{
+
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer2-col h3{
+  font-size: 19px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer2-col h3::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+}
+
+
+.about-us{
+
+  font-size: x-small;
+}
+
+.our-company{
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap:5px
+}
+
+
+.a_footer2{
+  text-decoration: none;
+  color: #fff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+
+h3{
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.social{
+  padding: 7px;
+}
+
+.help{
+  height: 150px;
+  margin-top: 40px;
+  flex-direction: column;
+  display: flex;
+  gap:5px;
+}
+
+.socials{
+  height: 150px;
+
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}

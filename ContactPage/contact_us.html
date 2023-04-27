@@ -3,87 +3,76 @@
 <html>
 <head>
     <link rel="stylesheet" href="contact_us.css">
-    <script src="contact_us.js"></script>
-
+    
 
 </head>
 <body>
-    <!-- Opening Hours and days can be ammended within div class "opening_Hours" -->
-    <div class="opening_Hours">
-        <br />
-        <h2> Our Opening Hours:</h2>
-        <p id="hours">
-            Monday - Thursday: 5pm - 10:30pm
-            <br />
-            Friday - Saturday: 11:30am - 12am
-            <br />
-        </p>
-    </div>
 
-    <!-- Contact email can be ammeneded within the sectin below -->
+    <!-- Opening hours and Contact email can be ammeneded within the sectin below -->
     <div class="contact_us">
         <br />
-        <h2> Contact Us: </h2>
-        <p id="hours">
+        <div class = hours> 
+          <br />
+          <h2> Our Opening Hours:</h2>
+          <p id="text">
+              <b>Monday - Thursday:</b>
+              <br />
+              5pm - 10:30pm
+              <br />
+              <br />
+              <b>Friday - Saturday: </b>
+              <br />
+              11:30am - 12am
+              <br />
+          </p>
+          <br />
+          <h2> Contact Us: </h2>
+        <p id="text">
             Send us an email: <a href=mailto:“picturehouse@gmail.com”>picturehouse@gmail.com</a>
             <br />
             or
             <br />
             Contact us via our Contact Form below
         </p>
-
     </div>
-
- 
 
         <br />
 
         <!-- Code within the "conatiner" decides the fields that will be displayed within the contact form-->
-        <form style="justify-content:center; display: flex" id="contactUs" onsubmit="submitFunction()">
+        <form id="contactUs">
             <div class="container">
-                <h1> Contact Form </h1>
-                
-                <p><center> <b>All fields marked with * are required</b></center></p>
-
-                <label for="forename"><b> Forename *</b></label>
-                <input type="text" name="forename" id="forename" required />
-
-
-                <label for="surname"><b> Surname *</b></label>
-                <input type="text"  name="surname" id="surname" required />
-
-                <label for="email"><b> Email *</b></label>
-                <input type="email" name="email" id="email" required />
-
-                <label for="contact_Number"><b> Contact Number</b></label>
-                <input type="tel" placeholder="Please Enter in this format 07752674987" name="contact_Number" id="contact_Number" minlength="11" maxlength="11" />
-
-                <!-- Dropdown List -->
-                <label for="country"><b>Country *</b></label>
-                <select id="country" name="country" required>
-                    <option value="" disabled selected hidden>Choose a Location </option>
-                    <option value="belfast">Belfast</option>
-                    <option value="coleraine">Coleraine</option>
-                    <option value="newry">Newry</option>
-                    <option value="lisburn">Lisburn</option>
-                </select>
-
-                <label for="message"><b> Message *</b></label>
-                <textarea id="message" name="message" placeholder="Your message (Required)" style="height:200px" required></textarea>
-
-                <!-- Submit and Reset Button -->
-                <div class = "align"> 
-                    <!-- Submit Button -->
-                    <input type="submit" value="Submit" />
-
-                    <!-- Reset Button -->
-                    <input type="button" onclick="resetFunction()" value="Reset">
-                </div>
-               
+              <h1> Contact Form </h1>
+              <p><center> <b>All fields marked with * are required</b></center></p>
+              <label for="forename"><b> Forename *</b></label>
+              <input type="text" name="forename" id="forename" required />
+      
+              <label for="surname"><b> Surname *</b></label>
+              <input type="text" name="surname" id="surname" required />
+      
+              <label for="email"><b> Email *</b></label>
+              <input type="email" name="email" id="email" required />
+      
+              <label for="contact_Number"><b> Contact Number</b></label>
+              <input type="tel" placeholder="Please Enter in this format 07752674987" name="contact_Number" id="contact_Number" minlength="11" maxlength="11" />
+      
+              <label for="message"><b> Message *</b></label>
+              <textarea id="message" name="message" placeholder="Your message (Required)" style="height:200px" required></textarea>
+      
+              <div class = "align">
+                <input type="submit" value="Submit" />
+              </div>
             </div>
-
-        </form>
-
+          </form>
+      
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Form Submission</h2>
+              <p id="form-data"></p>
+            </div>
+          </div>
+      
+          <script src="contact_us.js"></script>
 
 
 </body>

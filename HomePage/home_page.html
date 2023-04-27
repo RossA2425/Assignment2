@@ -3,16 +3,34 @@
   <head>
     <title>Movie Theater Website</title>
     <link rel="stylesheet" type="text/css" href="home_page.css" />
-    <script src="home_page.js"></script>
+    
   </head>
   <body>
     <header>
+      <H1 style="color: beige;">This is the Word</H1>
+
+      <nav class="nav">
+          <ul class="navbar-list">
+              <li>
+                  <a class="nav-link" href="/">Home</a>
+                  <a class="nav-link" href="/">Membership</a>
+                  <a class="nav-link" href="/">Contact Us</a>
+                  <a class="nav-link" href="/">Private Hire</a>
+              </li>
+          </ul>
+      </nav>
+  
+      <div class="container-divider">
+          <div class="line">
+              <span class="dot"></span>
+          </div>
+      </div>
 
     </header>
 
     <main>
       <!-- This code defines a container div with a slider. -->
-<p>delete me</p>
+
       <div class="container">
         <!-- This slider has 5 radio buttons, each with a unique ID (s1-s5) and the same name (slider).
        The radio buttons are hidden using the "d-none" class. -->
@@ -26,36 +44,78 @@
         <div class="cards">
           <label for="s1" id="slide1">
             <div class="card">
-              <img src="creed.jpg" alt="" />
-              <div class="shadow">Creed</div>
+              <img
+                style="object-fit: contain"
+                src="FireOfLove.jpg"
+                alt=""
+                height="400"
+                width="300"
+                width="500"
+              />
+              <div style="width: 66.7%; margin-left: 100px" class="shadow">
+                Fire Of Love
+              </div>
             </div>
           </label>
 
           <label for="s2" id="slide2">
             <div class="card">
-              <img src="creed.jpg" alt="" />
-              <div class="shadow">Creed</div>
+              <img
+                style="object-fit: contain"
+                src="Aftersun.jpg"
+                alt=""
+                height="350"
+                width="500"
+              />
+              <div style="width: 78%; margin-left: 66px" class="shadow">
+                Aftersun
+              </div>
             </div>
           </label>
 
           <label for="s3" id="slide3">
             <div class="card">
-              <img src="creed.jpg" alt="" />
-              <div class="shadow">Creed</div>
+              <img
+                style="object-fit: contain"
+                src="One_Fine_Morning.jpg"
+                alt=""
+                height="350"
+                width="500"
+              />
+              <div style="width: 58%; margin-left: 125px" class="shadow">
+                One Fine Morning
+              </div>
             </div>
           </label>
 
           <label for="s4" id="slide4">
             <div class="card">
-              <img src="creed.jpg" alt="" />
-              <div class="shadow">Creed</div>
+              <img
+                style="object-fit: contain"
+                src="The_grand_Budapest_hotel.jpg"
+                alt=""
+                height="350"
+                width="500"
+              />
+              <div style="width: 59%; margin-left: 125px" class="shadow">
+                The Grand Budapest hotel
+              </div>
             </div>
           </label>
 
           <label for="s5" id="slide5">
             <div class="card">
-              <img src="creed.jpg" alt="" />
-              <div class="shadow">Creed</div>
+              <img
+                style="object-fit: contain"
+                src="Mirror.jpg"
+                alt=""
+                height="400"
+                object-fit:
+                cover;
+              />
+              <div style="width: 44.4%; margin-left: 167px" class="shadow">
+                Mirror
+              </div>
             </div>
           </label>
         </div>
@@ -90,7 +150,7 @@
             <p>Brand new recliner chairs</p>
             <!-- This link contains a button for reading more about the news item. -->
 
-            <a href="/Read_More"><button class="More">Read More</button></a>
+            <a href="https://www.moduscinemas.co.uk/cinema-seating"><button class="More">Read More</button></a>
           </div>
           <!-- This div contains an image of the Marvel logo with a message about Marvel Phase 5. -->
 
@@ -99,12 +159,56 @@
             <p>Marvel Phase 5 and what it means</p>
             <!-- This link contains a button for reading more about the news item. -->
 
-            <a href="/Read_More"><button class="More">Read More</button></a>
+            <a href="https://www.gamesradar.com/marvel-phase-5-release-dates-new-mcu-movies-shows-lineup/"><button class="More">Read More</button></a>
           </div>
         </div>
       </section>
 
       <!-- This section defines a footer section with a class of "footer". -->
+
+      
+
+      <footer class="footer2">
+        <div class="container4">
+          <div class="row">
+            <div class="footer2-col">
+              <h3>Our Company</h3>
+              <ul class="our-company">
+                <li><a class="a_footer2" href="#">About Us</a></li>
+                <li><a class="a_footer2" href="#">Terms & Conditions</a></li>
+                <li><a class="a_footer2" href="#">Services</a></li>
+                <li><a class="a_footer2" href="#">Legal</a></li>
+                <li><a class="a_footer2" href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer2-col">
+              <h3>Help</h3>
+              <ul class="help">
+                <li><a class="a_footer2" href="#">FAQ's</a></li>
+                <li><a class="a_footer2" href="#">Refund Policy</a></li>
+                <li><a class="a_footer2" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer2-col">
+              <h3>Follow Us</h3>
+              <div class="socials">
+                <a class="social" href="https://facebook.com" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon
+                ></a>
+                <a class="social" href="https://twitter.com" target="_blank"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+                <a class="social" href="https://instagram.com" target="_blank"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
 
       <section class="footer">
         <!-- This heading contains the title of the section "QUICK BOOK". -->
@@ -130,13 +234,23 @@
           </select>
           <!-- This link contains a button for booking now with a class of "Book Now". -->
 
-          <a href="/Book_now"
-            ><button >Book Now</button></a
+          <a href="..//BookingPage/BookingPage.html"
+            ><button style="background-color: #ffeedd">Book Now</button></a
           >
         </div>
       </section>
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
     </main>
 
-    
+    <script src="home_page.js"></script>
+
   </body>
 </html>
