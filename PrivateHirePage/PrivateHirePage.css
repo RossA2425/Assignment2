@@ -125,3 +125,7 @@ form button[type='submit'] {
 .roomCards {
   display: flex;
 }
+
+.about {
+  background-color: white;
+}
