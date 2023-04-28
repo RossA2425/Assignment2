@@ -3,44 +3,66 @@
 <html>
 <head>
     <link rel="stylesheet" href="contact_us.css">
-    
 
+    <header>
+      <nav>
+        <ul class="navbar-list">
+          <li>
+            <a class="nav-link" href="../HomePage/home_page.html">Home</a>
+            <a class="nav-link" href="../MembershipPage/MembershipPageHtml.html">Membership</a>
+            <a class="nav-link" href="../ContactPage/contact_us.html">Contact Us</a>
+            <a class="nav-link" href="../PrivateHirePage/PrivateHirePageHtml.html">Private Hire</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="container-divider">
+        <div class="line">
+          <span class="dot"></span>
+        </div>
+      </div>
+    </header>
+  
 </head>
 <body>
 
-    <!-- Opening hours and Contact email can be ammeneded within the sectin below -->
-    <div class="contact_us">
-        <br />
-        <div class = hours> 
-          <br />
-          <h2> Our Opening Hours:</h2>
-          <p id="text">
-              <b>Monday - Thursday:</b>
-              <br />
-              5pm - 10:30pm
-              <br />
-              <br />
-              <b>Friday - Saturday: </b>
-              <br />
-              11:30am - 12am
-              <br />
-          </p>
-          <br />
-          <h2> Contact Us: </h2>
-        <p id="text">
-            Send us an email: <a href=mailto:“picturehouse@gmail.com”>picturehouse@gmail.com</a>
-            <br />
-            or
-            <br />
-            Contact us via our Contact Form below
-        </p>
-    </div>
+ <!-- Opening Hours and days can be ammended within div class "opening_Hours" -->
+ <div class="opening_Hours">
+  <br />
+  <h2> Our Opening Hours:</h2>
+  <p id="hours">
+      Monday - Thursday: 
+      <br />
+      5pm - 10:30pm
+      <br />
+      <br />
+      Friday - Saturday:
+      <br /> 
+      11:30am - 12am
+      <br />
+  </p>
+</div>
+
+<!-- Contact email can be ammended within the secton below -->
+<div class="contact_us">
+  <br />
+  <h2> Contact Us: </h2>
+  <p id="hours">
+      Send us an email: <b>picturehouse@gmail.com</b>
+      <br />
+      or
+      <br />
+      Contact us via our Contact Form below
+  </p>
+
+</div>
+
 
         <br />
 
         <!-- Code within the "conatiner" decides the fields that will be displayed within the contact form-->
         <form id="contactUs">
-            <div class="container">
+            <div class="form_container">
               <h1> Contact Form </h1>
               <p><center> <b>All fields marked with * are required</b></center></p>
               <label for="forename"><b> Forename *</b></label>
@@ -73,6 +95,46 @@
           </div>
       
           <script src="contact_us.js"></script>
+
+          <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Our Company</h3>
+                        <ul class="our-company">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Help</h3>
+                        <ul class="help" >
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <div class="socials">
+                           
+                            <a class="social" href="https://facebook.com" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
+                            <a class="social" href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a class="social" href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </footer>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
