@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: grey">
+  <head>
+    
+    <link
+      rel="stylesheet"
+      href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css"
+    />
+        <nav>
+      <ul class="navbar-list">
+        <li>
+          <a class="nav-link" href="../../HomePage/home_page.html">Home</a>
+          <a
+            class="nav-link"
+            href="../../MembershipPage/MembershipPageHtml.html"
+            >Membership</a
+          >
+          <a class="nav-link" href="../../ContactPage/contact_us.html"
+            >Contact Us</a
+          >
+          <a
+            class="nav-link"
+            href="../../PrivateHirePage/PrivateHirePageHtml.html"
+            >Private Hire</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-divider">
+      <div class="line">
+        <span class="dot" />
+      </div>
+    </div>
+    <title>Picturehouse Membership</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #d9d7e6, #FFeedd);
+        font-family: Arial, sans-serif;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      header {
+        background-color: #b484db;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        justify-content: center ;
+        
+      }
+      
+      header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        
+      }
+      
+      header li {
+        margin-right: 40px;
+      }
+      
+      header a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      
+      header a:hover {
+        background-color: #FFD8BE;
+      }
+      
+
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        padding: 20px;
+        background-color: #b484db;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+      
+      input[type="text"],
+      input[type="date"],
+      input[type="email"] {
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        margin-top: 5px;
+      }
+      
+      input[type="submit"] {
+        background-color: #FFD8BE;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #F8F7FF;
+      }
+    </style>
+  </head>
+  <script>
+    function submitForm() {
+      alert("Form submitted");
+    }
+  </script>
+  <body>
+    <div class="container">
+      <h1>Picturehouse Membership</h1>
+      <form onsubmit="submitForm()">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
