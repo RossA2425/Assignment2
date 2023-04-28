@@ -8,6 +8,7 @@
     <script src="PaymentPage.js"></script>
 </head>
 <body>
+  <!--Main body with the container for the payment form-->
     <div class="payment-container">
         <h2 class="payment-heading">Enter your payment details</h2>
         <form onsubmit="confirmPayment()">
@@ -27,10 +28,12 @@
             <div class="form-group form-group-cvv">
               <label for="cvv">CVV:</label>
               <input type="tel" id="cvv" name="cvv" placeholder="xxx" required minlength="3" maxlength="3">
+              <!--Each input contains placeholder text bar CVV, all input elements are 'required'-->
             </div>
           </div>
           <div class="form-group form-group-image">
             <label for="card-type">Accepted card types:</label>
+            <!--Displays images of accepted card types. pointer events: none as do not want user redirected mid payment-->
             <div class="card-images">
                 <a style="pointer-events: none;" href="http://www.merchantequip.com/information-center/credit-card-logos/"><img
                     src="https://www.merchantequip.com/images/logos/visa-mastercard-211x65.gif" width="211" height="65"
