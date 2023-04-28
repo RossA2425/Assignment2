@@ -1,3 +1,71 @@
+.nav-link{
+    padding: 0px;
+    margin-left: 16.5%;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+nav{
+width: 100%;
+margin-left: 8px;
+
+}
+.navbar-list{
+list-style-type: none;
+margin-top: 40px;
+}
+.nav-link:hover{
+text-decoration: underline;
+color: #feffec;
+}
+
+.container-divider{
+    padding: 12px;
+}
+.line{
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+.line::after, .line::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #feffec;
+    width: 46%;
+    top: 46%;
+}
+
+.line::after{
+    left: 50;
+}
+
+.line::before{
+    right: 50%;
+}
+
+.dot{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color:#feffec;
+  position: relative;
+  top:0;
+  left:0;
+  margin-left: 50%;
+}
+
+body{
+    background-color: white;
+}
+  
 /* Global font for the entire page */
 html * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,8 +76,9 @@ label {
     font-size: 15px;
 }
 
+
 /* The container creates the margins that the contact form fields will be displayed within */
-.container {
+.form_container{
     margin-top: 10px;
     margin-bottom: 200px;
     margin-right: 400px;
@@ -99,9 +168,9 @@ input[type=button]:hover {
 
 /* Will align buttons center  */
 .align{
-    display:flex;
-    align-items: center;
-    margin-left: 350px;
+    width: 150px;
+    text-align: center;
+    margin:0 auto;
 }
 
 /* will align h1 text to centre of page and display the text in the colour #9381FF  */
@@ -121,12 +190,114 @@ h2 {
 /* opening.hours will be displayed in the centre of the page */
 .opening_Hours {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* contact_us will be displayed in the centre of the page */
 .contact_us {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+/* Style the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:#F8F7FF;
+}
+
+.modal-content {
+    background-color: #FFEEDD;
+    margin: 15% auto;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Style the Footer */
+
+    .container{
+        max-width: 1170px;
+        margin:auto
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px;
+        margin-top: 90px;
+        
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    .footer-col h3{
+        font-size: 19px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .footer-col h3::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+    }
+    
+    
+    .about-us{
+        font-size: x-small;
+    }
+    .our-company-list{
+        text-align: left;
+    }
+    
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: small;
+    }
+    h3{
+        text-decoration: underline;
+        margin-bottom: 0;
+    }
+    .social{
+        padding: 7px;
+    }
+    .help{
+        margin-top: 40px;
+    }
+    
+    

@@ -3,76 +3,154 @@
 <html>
 <head>
     <link rel="stylesheet" href="contact_us.css">
-    <script src="contact_us.js"></script>
 
-
+    <head>
+      <!-- COPY THIS LINE TO THE TOP OF YOUR HTML FILE WITH YOUR OTHER <link> TAGS -->
+      <link
+        rel="stylesheet"
+        href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css"
+      />
+  
+      <!-- COPY THIS LINE DOWN AND PAST TO THE TOP OF YOUR HTML -->
+      <nav>
+        <ul class="navbar-list">
+          <li>
+            <a class="nav-link" href="../HomePage/home_page.html">Home</a>
+            <a
+              class="nav-link"
+              href="../MembershipPage/MembershipPageHtml.html"
+              >Membership</a
+            >
+            <a class="nav-link" href="../ContactPage/contact_us.html"
+              >Contact Us</a
+            >
+            <a
+              class="nav-link"
+              href="git stat../PrivateHirePage/PrivateHirePageHtml.html"
+              >Private Hire</a
+            >
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="container-divider">
+        <div class="line">
+          <span class="dot" />
+        </div>
+      </div>
+  
 </head>
 <body>
-    <!-- Opening Hours and days can be ammended within div class "opening_Hours" -->
-    <div class="opening_Hours">
-        <br />
-        <h2> Our Opening Hours:</h2>
-        <p id="hours">
-            Monday - Thursday: 5pm - 10:30pm
-            <br />
-            Friday - Saturday: 11:30am - 12am
-            <br />
-        </p>
-    </div>
 
-    <!-- Contact email can be ammeneded within the sectin below -->
-    <div class="contact_us">
-        <br />
-        <h2> Contact Us: </h2>
-        <p id="hours">
-            Send us an email: <a href=mailto:“picturehouse@gmail.com”>picturehouse@gmail.com</a>
-            <br />
-            or
-            <br />
-            Contact us via our Contact Form below
-        </p>
+ <!-- Opening Hours and days can be ammended within div class "opening_Hours" -->
+ <div class="opening_Hours">
+  <br />
+  <h2> Our Opening Hours:</h2>
+  <p id="hours">
+      Monday - Thursday: 
+      <br />
+      5pm - 10:30pm
+      <br />
+      <br />
+      Friday - Saturday:
+      <br /> 
+      11:30am - 12am
+      <br />
+  </p>
+</div>
 
-    </div>
+<!-- Contact email can be ammended within the secton below -->
+<div class="contact_us">
+  <br />
+  <h2> Contact Us: </h2>
+  <p id="hours">
+      Send us an email: <b>picturehouse@gmail.com</b>
+      <br />
+      or
+      <br />
+      Contact us via our Contact Form below
+  </p>
 
- 
+</div>
+
 
         <br />
 
         <!-- Code within the "conatiner" decides the fields that will be displayed within the contact form-->
-        <form style="justify-content:center; display: flex" id="contactUs" onsubmit="submitFunction()">
-            <div class="container">
-                <h1> Contact Form </h1>
-                
-                <p><center> <b>All fields marked with * are required</b></center></p>
-
-                <label for="forename"><b> Forename *</b></label>
-                <input type="text" name="forename" id="forename" required />
-
-
-                <label for="surname"><b> Surname *</b></label>
-                <input type="text"  name="surname" id="surname" required />
-
-                <label for="email"><b> Email *</b></label>
-                <input type="email" name="email" id="email" required />
-
-                <label for="contact_Number"><b> Contact Number</b></label>
-                <input type="tel" placeholder="Please Enter in this format 07752674987" name="contact_Number" id="contact_Number" minlength="11" maxlength="11" />
-
-             
-                <label for="message"><b> Message *</b></label>
-                <textarea id="message" name="message" placeholder="Your message (Required)" style="height:200px" required></textarea>
-
-                <!-- Submit and Reset Button -->
-                <div class = "align"> 
-                    <!-- Submit Button -->
-                    <input type="submit" value="Submit" />
-
-                </div>
-               
+        <form id="contactUs">
+            <div class="form_container">
+              <h1> Contact Form </h1>
+              <p><center> <b>All fields marked with * are required</b></center></p>
+              <label for="forename"><b> Forename *</b></label>
+              <input type="text" name="forename" id="forename" required />
+      
+              <label for="surname"><b> Surname *</b></label>
+              <input type="text" name="surname" id="surname" required />
+      
+              <label for="email"><b> Email *</b></label>
+              <input type="email" name="email" id="email" required />
+      
+              <label for="contact_Number"><b> Contact Number</b></label>
+              <input type="tel" placeholder="Please Enter in this format 07752674987" name="contact_Number" id="contact_Number" minlength="11" maxlength="11" />
+      
+              <label for="message"><b> Message *</b></label>
+              <textarea id="message" name="message" placeholder="Your message (Required)" style="height:200px" required></textarea>
+      
+              <div class = "align">
+                <input type="submit" value="Submit" />
+              </div>
             </div>
+          </form>
+      
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Form Submission</h2>
+              <p id="form-data"></p>
+            </div>
+          </div>
+      
+          <script src="contact_us.js"></script>
 
-        </form>
-
+          <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3>Our Company</h3>
+                        <ul class="our-company">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h3>Help</h3>
+                        <ul class="help" >
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col">
+                        <h3>Follow Us</h3>
+                        <div class="socials">
+                           
+                            <a class="social" href="https://facebook.com" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
+                            <a class="social" href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a class="social" href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </footer>
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
 </body>
