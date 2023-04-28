@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" style="background-color: grey">
   <head>
+    
     <link
       rel="stylesheet"
       href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css"
@@ -132,10 +133,15 @@
       }
     </style>
   </head>
+  <script>
+    function submitForm() {
+      alert("Form submitted");
+    }
+  </script>
   <body>
     <div class="container">
       <h1>Picturehouse Membership</h1>
-      <form>
+      <form onsubmit="submitForm()">
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" required>
         <label for="dob">Date of Birth:</label>
