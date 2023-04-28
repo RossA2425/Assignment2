@@ -6,26 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Page</title>
     <link rel="stylesheet" href="BookingPage.css">
-    <h1 class="main-title">BOOKING PAGE</h1>
+    <link
+    rel="stylesheet"
+    href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css"
+  />
+    <h1 class="main-title">BOOKINGS</h1>
     <img src="Images/Icons/black_cinema_logo.jpg">
+    <!--Creating the Nav element to display the NavBar links to other important pages of the site-->
     <nav>
         <ul class="navbar-list">
-            <li>
-                <a class="nav-link" href="/">Home</a>
-                <a class="nav-link" href="/">Membership</a>
-                <a class="nav-link" href="/">Contact Us</a>
-                <a class="nav-link" href="/">Private Hire</a>
-            </li>
+          <li>
+            <a class="nav-link" href="../../HomePage/home_page.html">Home</a>
+            <a
+              class="nav-link"
+              href="../../MembershipPage/MembershipPageHtml.html"
+              >Membership</a
+            >
+            <a class="nav-link" href="../../ContactPage/contact_us.html"
+              >Contact Us</a
+            >
+            <a
+              class="nav-link"
+              href="../../PrivateHirePage/PrivateHirePageHtml.html"
+              >Private Hire</a
+            >
+          </li>
         </ul>
-    </nav>
-    <div class="container-divider">
+      </nav>
+  <!--Creating the container to hold the dividing line between the navbar and main body-->
+      <div class="container-divider">
         <div class="line">
-            <span class="dot"></span>
+          <span class="dot">
         </div>
-    </div>
+      </div>
     
 </head>
 <body>
+    <!--MainBody created along with the different ticket buttons-->
     <div class="main-body">
        <h2>Please select your tickets(s)</h2>
        <button class="ticket-button">Adult £8.50</button>
@@ -33,7 +50,7 @@
        <button class="ticket-button">Senior £6</button>
        <button class="ticket-button">Student £6.50</button>
     </div>
-
+<!--Dropdown displaying the different options for the amount of tickets-->
     <div style="width:200px;">
         <select class="amount-select">
           <option disabled selected>Select amount of tickets:</option>
@@ -43,10 +60,11 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
+        <!--The Book Now button with a link to the payment page. Target blank to ensure page opens in a new tab-->
         <a href="PaymentPage.html" target="_blank"><button class="book-button" >BOOK NOW</button></a>
       </div>
 
-
+<!--Creating the footer along with the structure of rows and columns of the footer-->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -73,7 +91,7 @@
                 <div class="footer-column">
                     <h3>Follow Us</h3>
                     <div class="socials">
-                       
+                       <!--Logo links for each social media platform the cinema operates from-->
                         <a class="social" title="https://facebook.com" href="https://facebook.com" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a>
                         <a class="social" title="https://twitter.com" href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
                         <a class="social" title="https://instagram.com" href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -83,7 +101,7 @@
             </div>
         </div>   
     </footer>
-
+<!--Script to link the social media logos to their respective social media websites-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="BookingPage.js"></script>
