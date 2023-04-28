@@ -1,50 +1,36 @@
-/* Nav Bar Styling*/
-
-header{
-    background-color:#b8b8ff;
-    margin-top: 0 ;
-    padding: 0; 
-  }
-  
-  .nav{
-    margin-top: 0 ;
-    padding: 0; 
-  }
-  
-  .nav-link{
+.nav-link{
     padding: 0px;
-    margin-left: 200px;
+    margin-left: 16.5%;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+    color: white;
     font-size: 16px;
-  }
-  
-  nav{
-  width: 100%;
-  margin-left: 8px;
-  
-  }
-  .navbar-list{
-  list-style-type: none;
-  margin-top: 40px;
-  }
-  
-  .nav-link:hover{
-  text-decoration: underline;
-  color: #feffec;
-  }
-  
-  .container-divider{
+}
+
+nav{
+width: 100%;
+margin-left: 8px;
+
+}
+.navbar-list{
+list-style-type: none;
+margin-top: 40px;
+}
+.nav-link:hover{
+text-decoration: underline;
+color: #feffec;
+}
+
+.container-divider{
     padding: 12px;
-  }
-  .line{
+}
+.line{
     width: 100%;
     height: 45px;
     position: relative;
-  }
-  
-  .line::after, .line::before{
+}
+
+.line::after, .line::before{
     content: "";
     position: absolute;
     margin: auto;
@@ -52,31 +38,33 @@ header{
     background: #feffec;
     width: 46%;
     top: 46%;
-  }
-  
-  .line::after{
-    left: 0;
-  }
-  
-  .line::before{
-    right: 0;
-  }
-  
-  .dot{
-    display: inline-block;
+}
+
+.line::after{
+    left: 50;
+}
+
+.line::before{
+    right: 50%;
+}
+
+.dot{
+  display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
   border-color:#feffec;
-  background-color: rgba(0, 0, 0, 0);
   position: relative;
   top:0;
   left:0;
-  margin-left: 594px;
-  
-  }
+  margin-left: 50%;
+}
+
+body{
+    background-color: green;
+}
   
 /* Global font for the entire page */
 html * {
@@ -87,11 +75,6 @@ html * {
 label {
     font-size: 15px;
 }
-
-body{
-    background-color: white;
-}
-
 
 
 /* The container creates the margins that the contact form fields will be displayed within */
