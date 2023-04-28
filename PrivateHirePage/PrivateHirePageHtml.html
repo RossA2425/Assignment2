@@ -9,17 +9,43 @@
       rel="stylesheet"
       href="../SharedComponentsLibrary//CSS Files/card/card.css"
     />
+    <link
+      rel="stylesheet"
+      href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../SharedComponentsLibrary/WebPageFooter/Footer.css"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#rooms">Rooms</a></li>
-          <li><a href="#booking">Booking</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="navbar-list">
+          <li>
+            <a class="nav-link" href="../../HomePage/home_page.html">Home</a>
+            <a
+              class="nav-link"
+              href="../../MembershipPage/MembershipPageHtml.html"
+              >Membership</a
+            >
+            <a class="nav-link" href="../../ContactPage/contact_us.html"
+              >Contact Us</a
+            >
+            <a
+              class="nav-link"
+              href="../../PrivateHirePage/PrivateHirePageHtml.html"
+              >Private Hire</a
+            >
+          </li>
         </ul>
       </nav>
+
+      <div class="container-divider">
+        <div class="line">
+          <span class="dot" />
+        </div>
+      </div>
     </header>
     <main>
       <section id="hero">
@@ -27,69 +53,69 @@
         <p>Experience movies like never before!</p>
       </section>
       <div class="card">
-        <section id="about">
-          <div class="card-header">
-            <div class="card-title">
-              <h2>About</h2>
-            </div>
-          </div>
-          <div class="card-body">
+        <div class="card-body">
+          <section id="about">
+            <h2>About</h2>
             <p>
               Our private hire cinema rooms offer an exclusive movie experience
               for groups of up to 10 people. With comfortable seating, a
               state-of-the-art sound system, and a high-quality projector, you
               can enjoy your favorite movies in style.
             </p>
-          </div>
-        </section>
-      </div>
-      <section id="rooms">
-        <h2>Rooms</h2>
-        <div class="roomCards">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./Components/Images/cinema1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">The Classic</h5>
-              <p class="card-text">
-                This screen provides you with the 'classic' and authentic cinema
-                experience.
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="./Components/Images/cinema2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">The Luxe</h5>
-              <p class="card-text">
-                This screen provides an elevated sense of luxury to your cinema
-                experience.
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="./Components/Images/cinema4.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">The Front Room</h5>
-              <p class="card-text">
-                This screen provides a more suitable setting for smaller groups
-                of up to 10 people.
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <section id="rooms">
+            <h2>Rooms</h2>
+            <div class="roomCards">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Components/Images/cinema1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">The Classic</h5>
+                  <p class="card-text">
+                    This screen provides you with the 'classic' and authentic
+                    cinema experience.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Components/Images/cinema2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">The Luxe</h5>
+                  <p class="card-text">
+                    This screen provides an elevated sense of luxury to your
+                    cinema experience.
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Components/Images/cinema4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">The Front Room</h5>
+                  <p class="card-text">
+                    This screen provides a more suitable setting for smaller
+                    groups of up to 10 people.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       <div class="card">
         <div class="card-header">
           <div class="card-title">
@@ -137,12 +163,66 @@
           </section>
         </div>
       </div>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Phone: 028 7042 1298</p>
-        <p>Email: info@picturehousecinema.com</p>
-      </section>
+
+      <div class="card">
+        <div class="card-body">
+          <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone: 028 7042 1298</p>
+            <p>Email: info@picturehousecinema.com</p>
+          </section>
+        </div>
+      </div>
     </main>
     <script src="PrivateHirePage.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-column">
+            <h3>Our Company</h3>
+            <ul class="our-company">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul class="help">
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="socials">
+              <a class="social" href="https://facebook.com" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a class="social" href="https://twitter.com" target="_blank"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+              <a class="social" href="https://instagram.com" target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
