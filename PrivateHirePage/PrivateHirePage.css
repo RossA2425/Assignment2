@@ -19,20 +19,6 @@ header {
   padding: 1rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -46,11 +32,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: none;
   margin-bottom: 1rem;
 }
 
@@ -124,4 +105,8 @@ form button[type='submit'] {
 
 .roomCards {
   display: flex;
+}
+
+.about {
+  background-color: white;
 }
