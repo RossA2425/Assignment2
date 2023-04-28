@@ -1,269 +1,236 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Movie Theater Website</title>
     <link rel="stylesheet" type="text/css" href="home_page.css" />
-    
+
     <head>
-      <!-- COPY THIS LINE TO THE TOP OF YOUR HTML FILE WITH YOUR OTHER <link> TAGS -->
-      <link
-        rel="stylesheet"
-        href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css"
-      />
-  
-      <!-- COPY THIS LINE DOWN AND PAST TO THE TOP OF YOUR HTML -->
-      <nav>
-        <ul class="navbar-list">
-          <li>
-            <a class="nav-link" href="../HomePage/home_page.html">Home</a>
-            <a
-              class="nav-link"
-              href="../MembershipPage/MembershipPageHtml.html"
-              >Membership</a
-            >
-            <a class="nav-link" href="../ContactPage/contact_us.html"
-              >Contact Us</a
-            >
-            <a
-              class="nav-link"
-              href="../PrivateHirePage/PrivateHirePageHtml.html"
-              >Private Hire</a
-            >
-          </li>
-        </ul>
-      </nav>
-  
-      <div class="container-divider">
-        <div class="line">
-          <span class="dot" />
+        <!-- COPY THIS LINE TO THE TOP OF YOUR HTML FILE WITH YOUR OTHER <link> TAGS -->
+        <link rel="stylesheet"
+              href="../SharedComponentsLibrary/NavBar/NavBar_Divider.css" />
+
+        <!-- COPY THIS LINE DOWN AND PAST TO THE TOP OF YOUR HTML -->
+        <nav>
+            <ul class="navbar-list">
+                <li>
+                    <a class="nav-link" href="../HomePage/home_page.html">Home</a>
+                    <a class="nav-link"
+                       href="../MembershipPage/MembershipPageHtml.html">Membership</a>
+                    <a class="nav-link" href="../ContactPage/contact_us.html">Contact Us</a>
+                    <a class="nav-link"
+                       href="../PrivateHirePage/PrivateHirePageHtml.html">Private Hire</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-divider">
+            <div class="line">
+                <span class="dot" />
+            </div>
         </div>
-      </div>
+    </head>
+    <body>
+        <main>
+            <!-- This code defines a container div with a slider. -->
 
+            <div class="container">
+                <!-- This slider has 5 radio buttons, each with a unique ID (s1-s5) and the same name (slider).
+                The radio buttons are hidden using the "d-none" class. -->
+                <input type="radio" name="slider" class="d-none" id="s1" checked />
+                <input type="radio" name="slider" class="d-none" id="s2" />
+                <input type="radio" name="slider" class="d-none" id="s3" />
+                <input type="radio" name="slider" class="d-none" id="s4" />
+                <input type="radio" name="slider" class="d-none" id="s5" />
+                <!-- This slider contains a set of cards that will be displayed based on the selected radio button.
+                Each card is defined using a label element with a "for" attribute that matches the ID of the corresponding radio button. -->
+                <div class="cards">
+                    <label for="s1" id="slide1">
+                        <div class="card">
+                            <img style="object-fit: contain"
+                                 src="FireOfLove.jpg"
+                                 alt=""
+                                 height="400"
+                                 width="300"
+                                 width="500" />
+                            <div style="width: 66.7%; margin-left: 100px" class="shadow">
+                                Fire Of Love
+                            </div>
+                        </div>
+                    </label>
 
-  </head>
-  <body>
+                    <label for="s2" id="slide2">
+                        <div class="card">
+                            <img style="object-fit: contain"
+                                 src="Aftersun.jpg"
+                                 alt=""
+                                 height="350"
+                                 width="500" />
+                            <div style="width: 78%; margin-left: 66px" class="shadow">
+                                Aftersun
+                            </div>
+                        </div>
+                    </label>
 
+                    <label for="s3" id="slide3">
+                        <div class="card">
+                            <img style="object-fit: contain"
+                                 src="One_Fine_Morning.jpg"
+                                 alt=""
+                                 height="350"
+                                 width="500" />
+                            <div style="width: 58%; margin-left: 125px" class="shadow">
+                                One Fine Morning
+                            </div>
+                        </div>
+                    </label>
 
-    <main>
-      <!-- This code defines a container div with a slider. -->
+                    <label for="s4" id="slide4">
+                        <div class="card">
+                            <img style="object-fit: contain"
+                                 src="The_grand_Budapest_hotel.jpg"
+                                 alt=""
+                                 height="350"
+                                 width="500" />
+                            <div style="width: 59%; margin-left: 125px" class="shadow">
+                                The grand Budapest hotel
+                            </div>
+                        </div>
+                    </label>
 
-      <div class="container">
-        <!-- This slider has 5 radio buttons, each with a unique ID (s1-s5) and the same name (slider).
-       The radio buttons are hidden using the "d-none" class. -->
-        <input type="radio" name="slider" class="d-none" id="s1" checked />
-        <input type="radio" name="slider" class="d-none" id="s2" />
-        <input type="radio" name="slider" class="d-none" id="s3" />
-        <input type="radio" name="slider" class="d-none" id="s4" />
-        <input type="radio" name="slider" class="d-none" id="s5" />
-        <!-- This slider contains a set of cards that will be displayed based on the selected radio button.
-       Each card is defined using a label element with a "for" attribute that matches the ID of the corresponding radio button. -->
-        <div class="cards">
-          <label for="s1" id="slide1">
-            <div class="card">
-              <img
-                style="object-fit: contain"
-                src="FireOfLove.jpg"
-                alt=""
-                height="400"
-                width="300"
-                width="500"
-              />
-              <div style="width: 66.7%; margin-left: 100px" class="shadow">
-                Fire Of Love
-              </div>
+                    <label for="s5" id="slide5">
+                        <div class="card">
+                            <img style="object-fit: contain"
+                                 src="Mirror.jpg"
+                                 alt=""
+                                 height="400"
+                                 object-fit:
+                                 cover; />
+                            <div style="width: 44.4%; margin-left: 167px" class="shadow">
+                                Mirror
+                            </div>
+                        </div>
+                    </label>
+                </div>
             </div>
-          </label>
+            <!-- This section defines a container for the movie information with an ID of "text-section". -->
 
-          <label for="s2" id="slide2">
-            <div class="card">
-              <img
-                style="object-fit: contain"
-                src="Aftersun.jpg"
-                alt=""
-                height="350"
-                width="500"
-              />
-              <div style="width: 78%; margin-left: 66px" class="shadow">
-                Aftersun
-              </div>
-            </div>
-          </label>
+            <section class="infos" id="text-section">
+                <!-- This heading contains the movie title -->
 
-          <label for="s3" id="slide3">
-            <div class="card">
-              <img
-                style="object-fit: contain"
-                src="One_Fine_Morning.jpg"
-                alt=""
-                height="350"
-                width="500"
-              />
-              <div style="width: 58%; margin-left: 125px" class="shadow">
-                One Fine Morning
-              </div>
-            </div>
-          </label>
+                <h1>Welcome</h1>
+                <!-- This paragraph contains a brief description of the movie's plot. -->
 
-          <label for="s4" id="slide4">
-            <div class="card">
-              <img
-                style="object-fit: contain"
-                src="The_grand_Budapest_hotel.jpg"
-                alt=""
-                height="350"
-                width="500"
-              />
-              <div style="width: 59%; margin-left: 125px" class="shadow">
-                The Grand Budapest hotel
-              </div>
-            </div>
-          </label>
+                <p>
+                    Hope you find a movie you like!
+                </p>
+            </section>
+            <!-- This section defines a container for news and upcoming events with a class of "News". -->
 
-          <label for="s5" id="slide5">
-            <div class="card">
-              <img
-                style="object-fit: contain"
-                src="Mirror.jpg"
-                alt=""
-                height="400"
-                object-fit:
-                cover;
-              />
-              <div style="width: 44.4%; margin-left: 167px" class="shadow">
-                Mirror
-              </div>
-            </div>
-          </label>
-        </div>
-      </div>
-      <!-- This section defines a container for the movie information with an ID of "text-section". -->
+            <section class="News">
+                <!-- This heading contains the title of the section "News & Coming Up". -->
 
-      <section class="infos" id="text-section">
-        <!-- This heading contains the movie title -->
+                <h1>News & Coming Up</h1>
+                <!-- This div contains a container for two news items with a class of "container2". -->
 
-        <h1>Welcome</h1>
-        <!-- This paragraph contains a brief description of the movie's plot. -->
+                <div class="container2">
+                    <!-- This div contains an image of a cinema with a message about new recliner chairs. -->
 
-        <p>
-          Welcome to Picture House!
-        </p>
-      </section>
-      <!-- This section defines a container for news and upcoming events with a class of "News". -->
+                    <div class="img1">
+                        <img src="Cinema.jpg" alt="" />
+                        <p>Brand new recliner chairs</p>
+                        <!-- This link contains a button for reading more about the news item. -->
 
-      <section class="News">
-        <!-- This heading contains the title of the section "News & Coming Up". -->
+                        <a href="https://www.moovia.de/"><button class="More">Read More</button></a>
+                    </div>
+                    <!-- This div contains an image of the Marvel logo with a message about Marvel Phase 5. -->
 
-        <h1>News & Coming Up</h1>
-        <!-- This div contains a container for two news items with a class of "container2". -->
+                    <div class="img2">
+                        <img src="Marvel_Logo.svg.png" alt="" />
+                        <p>Marvel Phase 5 and what it means</p>
+                        <!-- This link contains a button for reading more about the news item. -->
 
-        <div class="container2">
-          <!-- This div contains an image of a cinema with a message about new recliner chairs. -->
+                        <a href="https://www.radiotimes.com/movies/mcu-phase-5-release-dates/"><button class="More">Read More</button></a>
+                    </div>
+                </div>
+            </section>
 
-          <div class="img1">
-            <img src="Cinema.jpg" alt="" />
-            <p>Brand new recliner chairs</p>
-            <!-- This link contains a button for reading more about the news item. -->
+            <!-- This section defines a footer section with a class of "footer". -->
 
-            <a href="https://www.moduscinemas.co.uk/cinema-seating"><button class="More">Read More</button></a>
-          </div>
-          <!-- This div contains an image of the Marvel logo with a message about Marvel Phase 5. -->
+            <footer class="footer2">
+                <div class="container4">
+                    <div class="row">
+                        <div class="footer2-col">
+                            <h3>Our Company</h3>
+                            <ul class="our-company">
+                                <li><a class="a_footer2" href="#">About Us</a></li>
+                                <li><a class="a_footer2" href="#">Terms & Conditions</a></li>
+                                <li><a class="a_footer2" href="#">Services</a></li>
+                                <li><a class="a_footer2" href="#">Legal</a></li>
+                                <li><a class="a_footer2" href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
 
-          <div class="img2">
-            <img src="Marvel_Logo.svg.png" alt="" />
-            <p>Marvel Phase 5 and what it means</p>
-            <!-- This link contains a button for reading more about the news item. -->
+                        <div class="footer2-col">
+                            <h3>Help</h3>
+                            <ul class="help">
+                                <li><a class="a_footer2" href="#">FAQ's</a></li>
+                                <li><a class="a_footer2" href="#">Refund Policy</a></li>
+                                <li><a class="a_footer2" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
 
-            <a href="https://www.gamesradar.com/marvel-phase-5-release-dates-new-mcu-movies-shows-lineup/"><button class="More">Read More</button></a>
-          </div>
-        </div>
-      </section>
+                        <div class="footer2-col">
+                            <h3>Follow Us</h3>
+                            <div class="socials">
+                                <a class="social" href="https://facebook.com" target="_blank">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a class="social" href="https://twitter.com" target="_blank">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                                <a class="social" href="https://instagram.com" target="_blank">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
 
-      <!-- This section defines a footer section with a class of "footer". -->
+                    </div>
+                </div>
+            </footer>
 
-      
+            <section class="footer">
+                <!-- This heading contains the title of the section "QUICK BOOK". -->
 
-      <footer class="footer2">
-        <div class="container4">
-          <div class="row">
-            <div class="footer2-col">
-              <h3>Our Company</h3>
-              <ul class="our-company">
-                <li><a class="a_footer2" href="#">About Us</a></li>
-                <li><a class="a_footer2" href="#">Terms & Conditions</a></li>
-                <li><a class="a_footer2" href="#">Services</a></li>
-                <li><a class="a_footer2" href="#">Legal</a></li>
-                <li><a class="a_footer2" href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
+                <h1>QUICK BOOK</h1>
+                <!-- This div contains a container for three dropdown menus and a button with a class of "buttons". -->
 
-            <div class="footer2-col">
-              <h3>Help</h3>
-              <ul class="help">
-                <li><a class="a_footer2" href="#">FAQ's</a></li>
-                <li><a class="a_footer2" href="#">Refund Policy</a></li>
-                <li><a class="a_footer2" href="#">Contact Us</a></li>
-              </ul>
-            </div>
+                <div class="buttons">
+                    <!-- This dropdown menu allows the user to select a movie with an id of "Movie". -->
 
-            <div class="footer2-col">
-              <h3>Follow Us</h3>
-              <div class="socials">
-                <a class="social" href="https://facebook.com" target="_blank">
-                  <ion-icon name="logo-facebook"></ion-icon
-                ></a>
-                <a class="social" href="https://twitter.com" target="_blank"
-                  ><ion-icon name="logo-twitter"></ion-icon
-                ></a>
-                <a class="social" href="https://instagram.com" target="_blank"
-                  ><ion-icon name="logo-instagram"></ion-icon
-                ></a>
-              </div>
-            </div>
+                    <select class="form-select2" aria-label="Dropdown" id="Movie">
+                        <option value="" selected>Select A Movie...</option>
+                    </select>
+                    <!-- This dropdown menu allows the user to select a date with an id of "Date". -->
 
-          </div>
-        </div>
-      </footer>
+                    <select class="form-select2" aria-label="Dropdown" id="Date">
+                        <option value="" selected>Select A Date...</option>
+                    </select>
+                    <!-- This dropdown menu allows the user to select a time with an id of "Time". -->
 
-      <section class="footer">
-        <!-- This heading contains the title of the section "QUICK BOOK". -->
+                    <select class="form-select2" aria-label="Dropdown" id="Time">
+                        <option value="" selected>Select A Time...</option>
+                    </select>
+                    <!-- This link contains a button for booking now with a class of "Book Now". -->
 
-        <h1>QUICK BOOK</h1>
-        <!-- This div contains a container for three dropdown menus and a button with a class of "buttons". -->
+                    <a href="../BookingPage/BookingPage.html"><button style="background-color: #ffeedd">Book Now</button></a>
+                </div>
+            </section>
 
-        <div class="buttons">
-          <!-- This dropdown menu allows the user to select a movie with an id of "Movie". -->
-
-          <select class="form-select2" aria-label="Dropdown" id="Movie">
-            <option value="" selected>Select A Movie...</option>
-          </select>
-          <!-- This dropdown menu allows the user to select a date with an id of "Date". -->
-
-          <select class="form-select2" aria-label="Dropdown" id="Date">
-            <option value="" selected>Select A Date...</option>
-          </select>
-          <!-- This dropdown menu allows the user to select a time with an id of "Time". -->
-
-          <select class="form-select2" aria-label="Dropdown" id="Time">
-            <option value="" selected>Select A Time...</option>
-          </select>
-          <!-- This link contains a button for booking now with a class of "Book Now". -->
-
-          <a href="../BookingPage/BookingPage.html"
-            ><button >Book Now</button></a
-          >
-        </div>
-      </section>
-
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
-    </main>
-
-    <script src="home_page.js"></script>
-  </body>
+            <script type="module"
+                    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule
+                    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </main>
+        <script src="home_page.js"></script>
+    </body>
 </html>
