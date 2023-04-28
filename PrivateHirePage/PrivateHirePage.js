@@ -18,6 +18,7 @@ form.addEventListener('submit', function(event) {
   // Display the form data in the modal
   const modalBody = modal.querySelector('.modal-body');
   modalBody.innerHTML = `
+    <h2>Your Booking Confirmation:</h2>
     <p>Name: ${formData.get('name')}</p>
     <p>Email: ${formData.get('email')}</p>
     <p>Room: ${formData.get('room')}</p>
