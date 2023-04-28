@@ -15,28 +15,17 @@ ul{
     margin-top: 90px;
     
 }
-.footer-col{
+.footer-column{
     width: 25%;
     padding: 0 15px;
 }
-.footer-col h3{
+.footer-column h3{
     font-size: 19px;
     color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 30px;
     position: relative;
 }
-.footer-col h3::before{
-    content: '';
-    position: absolute;
-    left:0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-}
-
-
 .about-us{
     font-size: x-small;
 }
